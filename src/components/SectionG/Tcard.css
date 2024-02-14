@@ -1,0 +1,15 @@
+.image-viewer_details__card {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 50vh;
+    width: 100%; 
+  }
+  .Tcard-main{
+    min-height: 100vh;
+    padding: 70px;
+    transition: 0.4s;
+  }

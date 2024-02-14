@@ -1,0 +1,266 @@
+/* App.css */
+
+/* Default styles for the entire app */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  cursor: url("../assets/heli.png");
+}
+
+/* Header styles */
+
+.section-container {
+  min-height: 70vh;
+  display: flex;
+  position: relative;
+}
+
+.section-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/dronbg/pngwing.com\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  opacity: 0.1; /* Adjust opacity as needed */
+  z-index: 1;
+}
+.light-mode .section-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/dronbg/pngwing.com\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  opacity: 0.5; /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.section-title {
+  width: 50%;
+  min-height: 70vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.section-photo {
+  width: 50%;
+  min-height: 70vh;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+/* Footer styles */
+.footer-container {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Home styles */
+.home-container {
+  padding: 20px;
+}
+.home-container h2 {
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.product-section {
+  margin-top: 20px;
+}
+
+.product-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .header-container {
+  background-color: black;
+}
+
+.dark-mode .footer-container {
+  background-color: black;
+}
+
+.dark-mode .home-container {
+  background-color: black;
+  color: white;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-mode .header-container {
+  background-color: #ddd;
+}
+
+.light-mode .footer-container {
+  background-color: #ddd;
+}
+
+.light-mode .home-container {
+  background-color: #fff;
+  color: #333;
+}
+/* Home.css */
+
+/* ... existing styles ... */
+
+.image-container {
+  /* margin-top: 30px; */
+  text-align: center;
+}
+
+.product-image {
+  width: 90%;
+  height: 50vh;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  /* filter: drop-shadow(0 3px 4px #48abe0); */
+}
+
+.image-heading {
+  font-size: 24px;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap");
+
+svg {
+  width: 80%;
+  overflow: visible;
+}
+
+.center {
+  /* width: 50%; */
+  height: 100vh;
+  display: flex;
+  /* background-color: #E3E7EB; */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#love {
+  position: fixed;
+  color: rgba(10, 0, 15, 0.48);
+  bottom: 1rem;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.2vw;
+}
+
+#svgator {
+  color: rgba(100, 90, 210, 0.8);
+}
+
+#svgator:hover {
+  color: rgba(100, 90, 230, 1);
+}
+
+a:visited {
+  color: rgba(100, 90, 210, 1);
+}
+.section-A {
+  height: 80vh;
+  display: flex;
+}
+.section-A__dronAnimi {
+  width: 40%;
+  /* background-color: red; */
+}
+.section-B__dronAnimi {
+  width: 60%;
+  /* background-color: blue; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 40px;
+}
+#home-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home-header__title {
+  color: hsl(0, 0%, 28%);
+  font-size: 35px !important;
+  font-weight: bold !important;
+  font-family: monospace;
+  letter-spacing: 7px !important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#home-header__title {
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 20%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  80% {
+    background-position: 200px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+.section-B__dron_card {
+  width: 30%;
+  height: 100px;
+  background-color: #ddd;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .section-B__dronAnimi {
+    width: 100%;
+  }
+  .section-photo {
+    display: none;
+  }
+  .section-title {
+    width: 100%;
+  }
+}

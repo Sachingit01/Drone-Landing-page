@@ -1,0 +1,33 @@
+.DronAnimiHead-text {
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold !important;
+  font-family: "Anonymous Pro", monospace !important;
+  letter-spacing: 5px !important;
+  overflow: hidden;
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 99%;
+  }
+}
+
+.DronAnimiHead-text_para {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  color: darkgrey;
+  padding: 0 10%;
+}
+.light-mode .DronAnimiHead-text {
+  color: #333;
+}
+.light-mode .DronAnimiHead-text_para {
+  color: #333;
+}

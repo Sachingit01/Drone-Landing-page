@@ -1,0 +1,41 @@
+/* ImageViewer.css */
+.image-viewer-container {
+  width: 100%;
+  min-height: 50vh;
+  /* background-color: aquamarine; */
+  display: flex;
+}
+
+.image-viewer {
+  width: 60%; /* Set the width of the viewer */
+  height: 50vh; /* Set the height of the viewer */
+  overflow: hidden;
+  position: relative;
+  padding-left: 10%;
+  padding-top: 5%;
+  /* background-color: red; */
+}
+.image-viewer_details {
+  width: 40%; /* Set the width of the viewer */
+  height: 50vh; /* Set the height of the viewer */
+  overflow: hidden;
+  padding: 5%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: aqua; */
+}
+
+.image-viewer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+.image-viewer_details_btn {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
